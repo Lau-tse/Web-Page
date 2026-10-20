@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lau | Creadora UGC y divulgadora científica</title>
+<meta name="description" content="Videos UGC y divulgación científica con voz en off para marcas de belleza, estudio y tecnología.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <h1 class="nameplate">Lau</h1>
+  <p class="tagline">Creadora UGC y divulgadora científica</p>
+  <nav aria-label="Principal">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#portafolio">Portafolio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div>
+      <h2>Contenido que conecta ciencia, belleza y vida real.</h2>
+      <p>Hago videos UGC y divulgación con voz en off para marcas de belleza, estudio y tecnología.</p>
+      <div class="actions">
+        <a class="btn" href="#portafolio">Ver mi trabajo</a>
+        <a class="btn ghost" href="#contacto">Trabajemos juntas</a>
+      </div>
+    </div>
+    <!-- Reemplaza este bloque por: <img class="photo" src="assets/images/lau.jpg" alt="Lau"> -->
+    <div class="photo" role="img" aria-label="Espacio para tu foto"><span>Tu foto aquí</span></div>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Estudio Física, leo mucho y me gustan la belleza y las herramientas digitales. Mi contenido mezcla curiosidad, estética y una forma natural de contar las cosas.</p>
+    <p>Para una marca, eso significa videos que explican bien el producto y se sienten reales, no un guion leído.</p>
+  </section>
+
+  <section id="portafolio">
+    <h2>Portafolio</h2>
+    <p>Son muestras propias, hechas para mostrar mi estilo. No son colaboraciones pagadas.</p>
+
+    <div class="filters" role="group" aria-label="Filtrar por categoría">
+      <button type="button" data-filter="all" aria-pressed="true">Todos</button>
+      <button type="button" data-filter="beauty" aria-pressed="false">Beauty</button>
+      <button type="button" data-filter="study" aria-pressed="false">Estudio y lifestyle</button>
+      <button type="button" data-filter="tech" aria-pressed="false">Apps y tecnología</button>
+      <button type="button" data-filter="science" aria-pressed="false">Ciencia</button>
+    </div>
+
+    <!-- En data-video pega el enlace de embed, por ejemplo https://www.youtube.com/embed/ID_DEL_VIDEO -->
+    <div class="grid">
+      <article class="card" data-cat="beauty" data-video="">
+        <div class="thumb"><span>Beauty</span></div>
+        <h3>Rutina de skincare en 5 pasos</h3>
+        <p><strong>Concepto:</strong> demostración con voz en off.</p>
+        <p><strong>Objetivo:</strong> mostrar el producto en uso real.</p>
+        <p><strong>Habilidades:</strong> guion, edición, cámara.</p>
+        <button type="button" class="play">Ver video</button>
+      </article>
+      <article class="card" data-cat="study" data-video="">
+        <div class="thumb"><span>Estudio y lifestyle</span></div>
+        <h3>Mi sistema de estudio con papelería</h3>
+        <p><strong>Concepto:</strong> un día de universidad.</p>
+        <p><strong>Objetivo:</strong> mostrar papelería y libros en contexto.</p>
+        <p><strong>Habilidades:</strong> storytelling, fotografía de producto.</p>
+        <button type="button" class="play">Ver video</button>
+      </article>
+      <article class="card" data-cat="tech" data-video="">
+        <div class="thumb"><span>Apps y tecnología</span></div>
+        <h3>Organiza tu semestre en Notion</h3>
+        <p><strong>Concepto:</strong> tutorial con pantalla grabada.</p>
+        <p><strong>Objetivo:</strong> enseñar una herramienta paso a paso.</p>
+        <p><strong>Habilidades:</strong> tutorial, voz en off, edición.</p>
+        <button type="button" class="play">Ver video</button>
+      </article>
+      <article class="card" data-cat="science" data-video="">
+        <div class="thumb"><span>Ciencia</span></div>
+        <h3>Un concepto de física en un minuto</h3>
+        <p><strong>Concepto:</strong> divulgación con una historia corta.</p>
+        <p><strong>Objetivo:</strong> explicar una idea difícil con claridad.</p>
+        <p><strong>Habilidades:</strong> guion educativo, síntesis.</p>
+        <button type="button" class="play">Ver video</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul class="services">
+      <li>Videos UGC con voz en off</li>
+      <li>Videos de demostración de producto</li>
+      <li>Tutoriales y contenido educativo</li>
+      <li>Storytelling y videos estilo lifestyle</li>
+      <li>Fotografía de producto</li>
+    </ul>
+    <p>Los precios se definen en una propuesta personalizada, según el proyecto.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Trabajemos juntas</h2>
+    <p>Cuéntame qué producto tienes y qué te gustaría crear. Te respondo por correo.</p>
+    <form id="contact-form">
+      <label>Nombre <input name="nombre" required autocomplete="name"></label>
+      <label>Empresa <input name="empresa" autocomplete="organization"></label>
+      <label>Producto <input name="producto" required></label>
+      <label>Tipo de colaboración
+        <select name="tipo">
+          <option>Video UGC</option>
+          <option>Demostración de producto</option>
+          <option>Tutorial o contenido educativo</option>
+          <option>Otro</option>
+        </select>
+      </label>
+      <button type="submit" class="btn">Escribirme por correo</button>
+    </form>
+    <p class="social">
+      <a href="#" rel="noopener">Instagram</a>
+      <a href="#" rel="noopener">TikTok</a>
+      <a href="#" rel="noopener">LinkedIn</a>
+    </p>
+  </section>
+</main>
+
+<footer><p>© <span id="year"></span> Lau</p></footer>
+
+<dialog id="player" aria-label="Reproductor de video">
+  <button type="button" class="close" aria-label="Cerrar">Cerrar</button>
+  <div class="frame"></div>
+</dialog>
+
+<script src="main.js"></script>
+</body>
+</html>
